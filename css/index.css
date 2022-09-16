@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("https://i.imgur.com/Ww3giqA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#mainSearchCard {
+    border-radius: 1rem;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+#bingBongSearchButton {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#timeButton {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#searchResults {
+    visibility: hidden;
+}
+
+#time {
+    visibility: hidden;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: white;
+    text-align: center;
+}
+
+#query {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    border-color: white;
+    text-align: center;
+}
+
+.form-control::placeholder {
+    color: white !important;
+}
+
+input:not(:placeholder-shown) {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type=text]:focus {
+    outline: 2px #761994;
+}
