@@ -12,6 +12,7 @@ function defaultBackground() {
     document.getElementById('particles-js').style.backgroundImage = 'url(' + images[0] + ')';
 }
 
+//BONUS
 function changeImage() {
     index++;
     if (index >= images.length) index = 0;
