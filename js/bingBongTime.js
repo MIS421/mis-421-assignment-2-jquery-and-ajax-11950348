@@ -18,7 +18,7 @@ function bingBongTime() {
                 duration: 1000
             },
             hide: {
-                effect: "fold",
+                effect: "explode",
                 duration: 500
             }
         });
