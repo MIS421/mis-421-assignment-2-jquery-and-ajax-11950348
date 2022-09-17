@@ -65,5 +65,4 @@ function closeBingBongSearch() {
     $("#query").val('');
     document.getElementById("searchResults").innerHTML = "";
     document.getElementById("searchResults").style.visibility = "hidden";
-
 }
