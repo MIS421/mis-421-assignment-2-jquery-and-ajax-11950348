@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\images",
+    "\\js"
   ],
-  "SelectedNode": "\\C:\\Users\\School\\Source\\Repos\\mis-421-assignment-2-jquery-and-ajax-11950348",
+  "SelectedNode": "\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }

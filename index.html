@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel='icon' href='./images/favicon.ico' type='image/x-icon' sizes="32x32"/>
+    <link rel='icon' href='./images/favicon.ico' type='image/x-icon' sizes="32x32" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous">
@@ -14,20 +14,20 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- Requirement 2 -->
-    <title>Bing Bong Search</title>
+    <title>Bing Bong Search!</title>
 </head>
 
-<body>
+<!-- Note: load() can be found in changeTheBackground.js and loads the default background -->
+<body onload="load()">
 
     <!-- Particles.js Container -->
     <div id="particles-js"></div>
 
-    <!-- Requirement 6 -->
-    <div id="searchResults"></div>
-
-    <!-- Requirement  -->
+    <!-- Requirement 7 -->
     <div id="time"></div>
 
+    <!-- Requirement 6 -->
+    <div id="searchResults"></div>
 
     <!-- Bing Bong Search Form -->
     <div>
@@ -46,7 +46,7 @@
                                 <form>
                                     <div class="form-outline form-white mb-4">
                                         <!-- Requirement 3 -->
-                                        <input id="query" type="text" placeholder="Search Bar" class="form-control form-control-lg" />
+                                        <input id="query" type="text" placeholder="Bing Bong Search Bar" class="form-control form-control-lg" />
                                     </div>
                                 </form>
 
@@ -65,12 +65,14 @@
         </div>
     </div>
     <!-- Bing Bong Search Form -->
-    
     <!-- Bing Bong JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha512-72WD92hLs7T5FAXn3vkNZflWG6pglUDDpm87TeQmfSg8KnrymL2G30R7as4FmTwhgu9H7eSzDCX3mjitSecKnw==" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/bingBongSearch.js"></script>
+    <script type="text/javascript" src="./js/bingBongTime.js"></script>
+    <script type="text/javascript" src="./js/bingBongImFeelingLucky.js"></script>
+    <script type="text/javascript" src="./js/changeTheBackground.js"></script>
 
     <!-- Particle JS -->
     <script src="./js/particles.js"></script>

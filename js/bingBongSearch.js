@@ -9,8 +9,10 @@ function apiSearch() {
         "mkt": "en-us"
     };
     $.ajax({
+        //Requirement 11
         url: 'https://api.bing.microsoft.com/v7.0/search?' + $.param(params),
         beforeSend: function (xhrObj) {
+            //Requirement 12
             xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "f11be7edac7a4011b9422b7c0d988612");
         },
         type: "GET",
@@ -27,8 +29,23 @@ function apiSearch() {
                 height: ($(window).height() - 75),
                 width: '100%',
                 close: closeBingBongSearch,
-                modal: true
-
+                modal: true,
+                buttons: {
+                    "Close Window": function () {
+                        $(this).dialog("close");
+                    }
+                },
+                open: function (event, ui) {
+                    $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
+                },
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "fold",
+                    duration: 500
+                }
             });
             results = '';
         })
@@ -38,18 +55,15 @@ function apiSearch() {
 }
 
 
+//Requirement 13
 function bingBongSearch() {
     apiSearch();
     document.getElementById("searchResults").style.visibility = "visible";
 }
 
 function closeBingBongSearch() {
-    document.getElementById("searchResults").innerHTML = "";
     $("#query").val('');
+    document.getElementById("searchResults").innerHTML = "";
     document.getElementById("searchResults").style.visibility = "hidden";
-}
 
-function bingBongTime() {
-    var time = new Date($.now());
-    alert(time);
 }
