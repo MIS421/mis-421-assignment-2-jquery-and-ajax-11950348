@@ -22,10 +22,6 @@ body {
     backdrop-filter: blur(16px);
 }
 
-#row{
-    padding-top: 50px;
-}
-
 #bingBongSearchButton {
     margin-right: 2.5px;
     margin-bottom: 10px;
