@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 #particles-js {
@@ -19,6 +20,10 @@ body {
     border-color: white;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16px);
+}
+
+#row{
+    padding-top: 50px;
 }
 
 #bingBongSearchButton {
