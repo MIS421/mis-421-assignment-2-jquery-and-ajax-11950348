@@ -22,7 +22,7 @@ function imFeelingLucky() {
     })
         .done(function (data) {
             len = data.webPages.value.length;
-            
+
             //This opens a new window with the first result.
             window.open(data.webPages.value[0].url, '_blank');
 
